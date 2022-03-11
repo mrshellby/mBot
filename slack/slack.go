@@ -1,7 +1,7 @@
 package slack
 
 import (
-		"encoding/json"
+	"encoding/json"
 	"fmt"
 	"strconv"
 	"time"
