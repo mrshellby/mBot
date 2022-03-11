@@ -12,6 +12,12 @@ To get your Discord bot token, you will need to follow the steps at <https://www
 
 Once you have your Discord bot token, add the `CHANNEL_ID` and `DISCORD_TOKEN` to `config.json`.
 
+## Slack Setup Instructions
+
+To get your Slack Webhook URL, you will need to follow the steps at <https://api.slack.com/apps/new>.
+
+Once you have your Slack Webhook, add the `WEBHOOK_URL` to `config.json`.
+
 ## Authy Configuration
 
 To get your Authy Secret, you will need to follow the instructions at <https://github.com/alexzorin/authy>.
