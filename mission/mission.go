@@ -18,7 +18,7 @@ import (
 	"github.com/un4gi/mBot/env"
 	"github.com/un4gi/mBot/requests"
 	"github.com/un4gi/mBot/targets"
-	"github.com/mrshellby/mBot-dev/slack"
+	"github.com/mrshellby/mBot/slack"
 )
 
 var blacklist []string

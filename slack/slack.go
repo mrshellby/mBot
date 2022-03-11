@@ -1,8 +1,11 @@
 package slack
 
 import (
+		"encoding/json"
 	"fmt"
-
+	"strconv"
+	"time"
+	
 	"github.com/slack-go/slack"
 	"github.com/un4gi/mBot/config"
 )
@@ -13,7 +16,7 @@ func Hook(m string) {
 		Fallback:      "You successfully claimed a mission!",
 		Text:          m,
 		Ts:            json.Number(strconv.FormatInt(time.Now().Unix(), 10)),
-	}, target, amount
+	}
 	msg := slack.WebhookMessage{
 		Attachments: []slack.Attachment{attachment},
 	}
