@@ -25,6 +25,7 @@ type Configurations struct {
 	Authy_Secret  string `json:"AUTHY_SECRET"`
 	Email_Address string `json:"EMAIL_ADDRESS"`
 	Password      string `json:"PASSWORD"`
+	Slack_Webhook string `json:"WEBHOOK_URL"`
 }
 
 func ReadConfig(ConfigFile string) *Configurations {
