@@ -162,7 +162,7 @@ func GrabMission(target string, pay int, project string, title string, n int) {
 		if len(bodyString) > 0 { // Check to see if there is a JSON response
 			log.Printf(env.SuccessColor, "Grabbed $ "+fmt.Sprint(pay)+" "+project+" mission - "+title)
 			discord.ConnectDiscord("Grabbed $ " + fmt.Sprint(pay) + " " + project + " mission - " + title)
-			slack.Hook(fmt.Sprint(target), fmt.Sprint(title))
+			slack.Hook("Grabbed $ " + fmt.Sprint(pay) + " " + project + " mission - " + title)
 		} else {
 			log.Printf(env.WarningColor, "Error grabbing $"+fmt.Sprint(pay)+" "+project+" mission - "+title)
 		}

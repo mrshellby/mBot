@@ -7,11 +7,11 @@ import (
 	"github.com/un4gi/mBot/config"
 )
 
-func Hook(target string, title string) {
+func Hook(m string) {
 	attachment := slack.Attachment{
 		Color:         "good",
 		Fallback:      "You successfully claimed a mission!",
-		Text:          "Target: "+target+"\nTitle: "+title+"\n",
+		Text:          m,
 		Ts:            json.Number(strconv.FormatInt(time.Now().Unix(), 10)),
 	}, target, amount
 	msg := slack.WebhookMessage{
